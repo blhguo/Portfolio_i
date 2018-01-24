@@ -1,4 +1,3 @@
-package portfolio_blg19;
 import javafx.scene.Group;
 //This code is part of my Masterpiece. Brandon Guo.
 /**
