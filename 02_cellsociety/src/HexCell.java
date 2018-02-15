@@ -1,10 +1,18 @@
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Polygon;
-import javafx.scene.shape.Rectangle;
-
-public class HexCell extends Polygon {
-
-	public void Build(int i, int j, int W, int H, double BuffW, double BuffH, Color FillColor) {
+/**
+ * @author blg19
+ * Image that returns a polygon that will represent a hexagon
+ *
+ */
+public class HexCell extends GridCell {
+	
+	public void Build(Cell input, double BuffW, double BuffH) {
+		int i = input.get_xpos();
+		int j = input.get_ypos();
+		int W = input.get_W();
+		int H = input.get_H();
+		Color FillColor = input.getDisplayColor();
 		Double[] points;
 		double H1 = 3*H/4;
 		if ((i % 2 )== 0) {
