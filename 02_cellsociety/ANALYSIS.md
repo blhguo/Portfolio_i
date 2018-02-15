@@ -1,4 +1,3 @@
-
 CompSci 308: Cell Society Analysis
 ===================
 
