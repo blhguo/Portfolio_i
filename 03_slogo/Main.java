@@ -17,7 +17,7 @@ import java.util.Map;
 
 import TreeBuilding.TreeBuilder;
 import TreeReader.TreeReader;
-
+//This class is important because it represents the backbone of the backend; it highlights the data flow and how everything is passed from one to another, as well as the overarching data structures used. 
 public class Main extends Application implements Observer{
 	
 	private static final String TITLE = "SLogo";
@@ -70,7 +70,7 @@ public class Main extends Application implements Observer{
 		TreeReader reader = new TreeReader();
 		SlogoNode[] BufferArray = factory.convertStringtoNode(sanitize(simulation.getPassValue()), functions);
 		SlogoNode Head = Builder.buildTree(BufferArray);
-        simulation.setConsole(reader.evaluate(Head, variables, functions, TurtleMap));
+        simulation.setConsole(reader.evaluate(Head, variables, functions, TurtleMap)); //executes the tree
         simulation.updateScreen();
 		updateVarView();
 

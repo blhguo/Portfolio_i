@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 /*
- * builds the abstract node class that all commands will follow
+ * builds the abstract node class that all commands will follow. All command nodes need to follow this format in order for the reflective and generic calls used throughout the rest of the environment to fucntion properly, as we want to be able to string any chain of commands together. 
  */
 public abstract class SlogoNode implements Command {
 	protected int numchildren = 0;
