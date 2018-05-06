@@ -345,6 +345,7 @@ Helper method to save data that is unique to each game and completely mutable:
 
 ```
 > At that point, our design was to handle a list of levels and to serialize those. To that end, instead of serializing a list object, we iterated through the list and saved each individual level under the tag "dataN", with "N" as an integer representing the level number. A counter was implemented to iterate each time we saved a level, so that later on when we loaded that data would be stored in the xml, and the for-loop would have a set number of times to execute. 
+
 ```java 
 	private void openFile(File file) throws ParserConfigurationException{
 		System.out.println(file);
