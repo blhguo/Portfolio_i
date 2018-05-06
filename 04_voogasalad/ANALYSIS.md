@@ -87,7 +87,8 @@ This package is much more difficult to understand and much less readable simply 
 	}
 
 ``` 
-- > Unlike the first package, this package is more poorly organized and difficult to read. Because this package is likely referencing other classes and their operation is more hidden and more convoluted, there are more dependencies and challenges in the reading of the code. A large part of this challenge, I think, is the fact that too much functionality is encapsulated within this package; there's too much handled by this package alone, and that makes it difficult to read and understand. For example, data presentation and rendering is handled by this package, but other things like navigation, buttons, data management, and file selection are all put under the same package, making a non-homogenous mixture and making it difficult to read. 
+Unlike the first package, this package is more poorly organized and difficult to read. Because this package is likely referencing other classes and their operation is more hidden and more convoluted, there are more dependencies and challenges in the reading of the code. A large part of this challenge, I think, is the fact that too much functionality is encapsulated within this package; there's too much handled by this package alone, and that makes it difficult to read and understand. For example, data presentation and rendering is handled by this package, but other things like navigation, buttons, data management, and file selection are all put under the same package, making a non-homogenous mixture and making it difficult to read. 
+
 ``` java
 DataManager.java
 	public void initialize(InstanceStorage storage) {
